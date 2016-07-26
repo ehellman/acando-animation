@@ -14,13 +14,18 @@ const lineWidths = [
 
 (function() {
   var image = document.getElementById('image');
-  printLines();
+  lineWidths.forEach(function(entry){
+    image.appendChild = '<div class="line" style="width: ' + entry + '"></div>';
+    console.log(entry);
+  });
+  // printLines();
 })();
 
 function printLines(){
   var lines = 10;
-  for (line in lines) {
-    image.innerHTML = 'Woo';
-  }
-  image.innerHTML = '<div class="line"></div>';
+  lineWidths.forEach(function(entry){
+    image.innerHTML = '<div class="line" style="width: ' + entry + '"></div>';
+    console.log(entry);
+  });
+  // image.innerHTML = '<div class="line"></div>';
 }
