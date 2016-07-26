@@ -1,0 +1,15 @@
+$lineWidth: 30px;
+
+.line{
+  width: 357px;
+  height: $lineWidth;
+  border-radius: 0 $lineWidth $lineWidth 0;
+  background: $lightBlue;
+}
+.circle{
+  background: #fff;
+  width: $lineWidth;
+  height: $lineWidth;
+  border-radius: $lineWidth;
+  float: right;
+}

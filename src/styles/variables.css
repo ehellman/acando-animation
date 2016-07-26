@@ -1,0 +1,27 @@
+/* Colors */
+$blue:        #0b1ad8;
+$lightBlue:   #00c1ff;
+$purple:      #66009b;
+$lightPurple: #af56ff;
+$orange:      #ff4c05;
+$coolGray:    #474f72;
+
+$grayscale1:  #ffffff;
+$grayscale2:  #f2f2f2;
+$grayscale3:  #bfbfbf;
+$grayscale4:  #8c8c8c;
+$grayscale5:  #5a5a5a;
+$grayscale6:  #262626;
+
+.blue{background:$blue;}
+.lightBlue{background:$lightBlue;}
+.purple{background:$purple;}
+.lightPurple{background:$lightPurple;}
+.orange{background:$orange;}
+.coolGray{background:$coolGray;}
+.grayscale1{background:$grayscale1;}
+.grayscale2{background:$grayscale2;}
+.grayscale3{background:$grayscale3;}
+.grayscale4{background:$grayscale4;}
+.grayscale5{background:$grayscale5;}
+.grayscale6{background:$grayscale6;}
