@@ -14,7 +14,6 @@
   "license": "UNLICENSED",
   "homepage": "",
   "devDependencies": {
-    "gulp-babel": "^6.1.1",
     "postcss-calc": "^5.3.0"
   },
   "dependencies": {

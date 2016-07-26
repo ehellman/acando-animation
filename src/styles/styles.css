@@ -2,6 +2,7 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @import 'lost.css';
+@import 'animations.css';
 @import 'variables.css';
 @import 'header.css';
 @import 'lines.css';
