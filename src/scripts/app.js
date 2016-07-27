@@ -15,25 +15,54 @@ const colors = [
 ];
 
 const orderedColors = [
-  'purple',
+  'lightPurple',
   'lightBlue',
-  'purple',
+  'lightPurple',
   'orange',
-  'purple',
+  'lightPurple',
   'lightBlue',
-  'purple',
+  'lightPurple',
   'lightBlue',
-  'purple',
+  'lightPurple',
   'orange',
-  'purple',
+  'lightPurple',
   'lightBlue',
-  'purple'
+  'lightPurple'
 ];
 
 
 // Selectors
 
 var image = document.getElementById('image');
+var vinjett,
+    lines;
+
+// hide vinjett
+var v1 = document.querySelectorAll('.vinjett1');
+var v2 = document.querySelectorAll('.vinjett2');
+var v3 = document.querySelectorAll('.vinjett3');
+var v4 = document.querySelectorAll('.vinjett4');
+var v5 = document.querySelectorAll('.vinjett5');
+var v6 = document.querySelectorAll('.vinjett6');
+v1[0].style.display = 'none';
+v2[0].style.display = 'none';
+v3[0].style.display = 'none';
+v4[0].style.display = 'none';
+v5[0].style.display = 'none';
+v6[0].style.display = 'none';
+
+// navigation
+var menu1 = document.querySelectorAll('.menu-item1')[0];
+
+menu1.addEventListener("click", function(){
+  if (!this.classList.contains('active')){
+    this.classList.add(' active');
+  }
+});
+// grab the menu-item$ of the clicked element [convert to data-id?] for easier grab?
+// hide current vinjett
+// show vinjett$
+
 
 
 // Line Functions
@@ -82,7 +111,7 @@ function createRandomLine(width, color){
   // append circle to line
   d.appendChild(c);
   // append line to container
-  image.appendChild(d);
+  lines.appendChild(d);
 }
 
 function createOrderedLine(width, color){
@@ -99,7 +128,7 @@ function createOrderedLine(width, color){
   // append circle to line
   d.appendChild(c);
   // append line to container
-  image.appendChild(d);
+  lines.appendChild(d);
 }
 
 
@@ -107,7 +136,7 @@ function displayRandomLines(amount){
   var len = amount,
       i = 0;
   for (i; i < len; i++){
-    createRandomLine(getRandomWidth(15, 70), getRandomColor());
+    createRandomLine(getRandomWidth(33, 95), getRandomColor());
   }
 
   // lineWidths.forEach(function(entry){
@@ -119,20 +148,30 @@ function displayOrderedLines(amount){
   var len = amount,
       i = 0;
   for (i; i < len; i++){
-    createOrderedLine(getRandomWidth(15, 70), orderedColors[i]);
+    createOrderedLine(getRandomWidth(33, 95), orderedColors[i]);
   }
-
-  // for(i; i < len; i++) {
-  //     lines[i].className += " " + orderedColors[i];
-  // }
 }
+
+function showVinjett1(){
+
+  vinjett = v1[0];
+  v1[0].style.display = 'block';
+  lines = v1[0].children[0];
+  displayOrderedLines(10);
+}
+
+
+// App Functions
+
+
 
 // App
 (function() {
 
+  showVinjett1();
   // displayRandomLines();
   // overwriteColorsWithOrdered();
-  displayOrderedLines(10);
+  // displayOrderedLines(10);
   // displayRandomLines(10);
 
 })();

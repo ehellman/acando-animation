@@ -1,0 +1,28 @@
+$navHeight: 80px;
+
+#navigation{
+  background: $grayscale6;
+  color: #fff;
+  height: $navHeight;
+  & ul {
+    list-style-type: none;
+    position: relative;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+    & li {
+      display: inline-block;
+      & a {
+        padding: 20px 20px;
+        display: block;
+        color: $grayscale3;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover, &.active{
+          color: #fff;
+          text-shadow: 0 0 5px rgba(255,255,255,.2);
+        }
+      }
+    }
+  }
+}

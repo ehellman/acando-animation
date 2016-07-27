@@ -1,10 +1,13 @@
-$lineWidth: 25px;
-$lineSpacing: 20px;
+$lineWidth: 20px;
+$lineSpacing: 25px;
 
 .line{
   height: $lineWidth;
   border-radius: 0 $lineWidth $lineWidth 0;
   margin-bottom: $lineSpacing;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 .circle{
   background: #fff;

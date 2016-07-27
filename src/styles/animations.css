@@ -33,4 +33,39 @@
 
 .slideInLeft {
   animation-name: slideInLeft;
+  animation-delay: .5s;
+}
+
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-delay: .5s;
+}
+
+
+@keyframes slideInRightTitle {
+  from {
+    transform: translate3d(100%, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+.slideInRightTitle {
+  animation-name: slideInRightTitle;
+  animation-delay: .5s;
 }

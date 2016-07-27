@@ -1,0 +1,49 @@
+h1{
+  font-size: 3rem;
+  letter-spacing: -2px;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+p{
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.vinjett1{
+  color: #fff;
+  background: $coolGray;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  clear: both;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  & .lines {
+    width: 50%;
+    float: left;
+  }
+  & .title{
+    height: 100%;
+    display: inline-block;
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .title-wrap{
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
