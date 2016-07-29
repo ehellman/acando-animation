@@ -72,7 +72,7 @@ gulp.task('sync', function() {
   browserSync({
     server: {
       baseDir: "./dist/",
-      proxy: "172.24.45.15"
+      proxy: "172.24.45.13"
     }
   });
 });

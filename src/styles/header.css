@@ -1,4 +1,5 @@
 header{
   /*background: $blue;*/
   /*min-height: 600px;*/
+  overflow: hidden;
 }

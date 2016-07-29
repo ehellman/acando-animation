@@ -69,3 +69,35 @@
   animation-name: slideInRightTitle;
   animation-delay: .5s;
 }
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+  animation-delay: .5s;
+}
+
+@keyframes slideInRightVinjett2 {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideInRightVinjett2 {
+  animation-name: slideInRightVinjett2;
+  animation-delay: 1s;
+}

@@ -1,7 +1,9 @@
 $lineWidth: 20px;
 $lineSpacing: 25px;
+$vinjett2LineHeight: 185px;
+$vinjett2LineIncrement: 40px;
 
-.line{
+#vinjett1 > .line{
   height: $lineWidth;
   border-radius: 0 $lineWidth $lineWidth 0;
   margin-bottom: $lineSpacing;
@@ -15,4 +17,43 @@ $lineSpacing: 25px;
   height: $lineWidth;
   border-radius: $lineWidth;
   float: right;
+}
+
+#vinjett2{
+  .line{
+    width: $lineWidth;
+    @for $i from 1 to 7 {
+      // do stuff
+      $startWidth: 145px;
+      &.line-$(i){
+        height: calc($vinjett2LineHeight + 40*calc($(i)-1));
+      }
+    }
+    background: #fff;
+    float: left;
+    position: relative;
+    /*background: #fff;*/
+    border-radius: 0 0 $lineWidth $lineWidth;
+    margin-right: $lineSpacing;
+    &:last-child{
+      margin-right: 0;
+    }
+    .horizontal-line{
+      /*background: #fff;*/
+      border-radius: $lineWidth;
+      position: absolute;
+      z-index: 2;
+      /*left: 0;*/
+      height: $lineWidth;
+      bottom: 0;
+      width: 400px;
+      .circle{
+        background: $grayscale1;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        /*width: 400px;*/
+      }
+    }
+  }
 }
