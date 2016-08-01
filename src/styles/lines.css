@@ -3,20 +3,62 @@ $lineSpacing: 25px;
 $vinjett2LineHeight: 185px;
 $vinjett2LineIncrement: 40px;
 
-#vinjett1 > .line{
-  height: $lineWidth;
-  border-radius: 0 $lineWidth $lineWidth 0;
-  margin-bottom: $lineSpacing;
-  &:last-child{
-    margin-bottom: 0;
+#vinjett1{
+  .line{
+    height: $lineWidth;
+    width: 300px;
+    border-radius: 0 $lineWidth $lineWidth 0;
+    margin-bottom: $lineSpacing;
+    &.line-1{
+      width: 490px;
+    }
+    &.line-2{
+      width: 560px;
+    }
+    &.line-3{
+      width: 410px;
+    }
+    &.line-4{
+      width: 580px;
+    }
+    &.line-5{
+      width: 460px;
+    }
+    &.line-6{
+      width: 310px;
+    }
+    &.line-7{
+      width: 560px;
+    }
+    &.line-8{
+      width: 620px;
+    }
+    &.line-9{
+      width: 480px;
+    }
+    &.line-10{
+      width: 640px;
+    }
+    &.line-11{
+      width: 520px;
+    }
+    &.line-12{
+      width: 370px;
+    }
+    &.line-13{
+      width: 620px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
-}
-.circle{
-  background: #fff;
-  width: $lineWidth;
-  height: $lineWidth;
-  border-radius: $lineWidth;
-  float: right;
+  .circle{
+    background: #fff;
+    width: $lineWidth;
+    height: $lineWidth;
+    border-radius: $lineWidth;
+    float: right;
+  }
 }
 
 #vinjett2{

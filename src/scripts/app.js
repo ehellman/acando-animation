@@ -247,7 +247,7 @@ function buildOrderedVinjett1Lines(amount){
 function displayVinjett1(amount){
 
   vinjett = v1;
-  // v1.style.display = 'block';
+  v1.style.display = 'block';
   lines = v1.children[0];
   buildOrderedVinjett1Lines(amount);
 }
@@ -274,9 +274,9 @@ function displayVinjett1(amount){
 // App
 (function() {
 
-  displayVinjett1(10);
+  // displayVinjett1(10);
+  v1.style.display = 'block';
   // v2.style.display = 'block';
-  v6.style.display = 'block';
   // displayVinjett2();
 
   //nav
