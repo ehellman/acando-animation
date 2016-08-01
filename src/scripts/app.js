@@ -101,34 +101,6 @@ function clearActive() {
   }
 }
 
-// grab the menu-item$ of the clicked element [convert to data-id?] for easier grab?
-// hide current vinjett
-// show vinjett$
-
-
-
-// Line Functions
-
-// function overwriteColorsWithOrdered(){
-//   var lines = document.getElementsByClassName("line"),
-//       len = lines !== null ? lines.length : 0,
-//       i = 0;
-//   for(i; i < len; i++) {
-//       if (
-//            (lines[i].classList.contains("lightBlue")) ||
-//            (lines[i].classList.contains("purple")) ||
-//            (lines[i].classList.contains("lightPurple")) ||
-//            (lines[i].classList.contains("orange"))
-//          )
-//       {
-//         lines[i].classList.remove("lightBlue");
-//         lines[i].classList.remove("purple");
-//         lines[i].classList.remove("lightPurple");
-//         lines[i].classList.remove("orange");
-//       }
-//       lines[i].className += " " + orderedColors[i];
-//   }
-// }
 
 /* * * * * * * * * * * * *
      COLOR FUNCTIONS
@@ -184,42 +156,42 @@ function createOrderedVinjett1Line(width, color){
 /**********/
 /* line.2 */
 /**********/
-function createVerticalVinjett2Line(height){
-  // create vertical line div
-  var d = document.createElement('div');
-  // create horizontal line div
-  var d2 = document.createElement('div');
-  // create circle
-  var c = document.createElement('div');
-  // set line height
-  // d.setAttribute('style','height: ' + height + 'px');
-  d2.setAttribute('style','width: ' + getRandomWidth(220, 580) + 'px;');
-  // set line classes
-  d.className = 'line animated slideInDown grayscale1 ';
-  d2.className = 'horizontal-line animated slideInRightVinjett2 orange ';
-  // set circle class
-  c.className = 'circle';
-  // append circle to line
-  d.appendChild(d2);
-  d2.appendChild(c);
-  // append line to container
-  lines.appendChild(d);
-}
-function createHorizontalVinjett2Line(width){
-  var d = document.createElement('div');
-  // create circle
-  var c = document.createElement('div');
-  // set line width
-  d.setAttribute('style','width: ' + width + 'px');
-  // set line class
-  d.className = 'horizontal-line animated orange ';
-  // set circle class
-  c.className = 'circle';
-  // append circle to line
-  d.appendChild(c);
-  // append line to container
-  lines.appendChild(d);
-}
+// function createVerticalVinjett2Line(height){
+//   // create vertical line div
+//   var d = document.createElement('div');
+//   // create horizontal line div
+//   var d2 = document.createElement('div');
+//   // create circle
+//   var c = document.createElement('div');
+//   // set line height
+//   // d.setAttribute('style','height: ' + height + 'px');
+//   d2.setAttribute('style','width: ' + getRandomWidth(220, 580) + 'px;');
+//   // set line classes
+//   d.className = 'line animated slideInDown grayscale1 ';
+//   d2.className = 'horizontal-line animated slideInRightVinjett2 orange ';
+//   // set circle class
+//   c.className = 'circle';
+//   // append circle to line
+//   d.appendChild(d2);
+//   d2.appendChild(c);
+//   // append line to container
+//   lines.appendChild(d);
+// }
+// function createHorizontalVinjett2Line(width){
+//   var d = document.createElement('div');
+//   // create circle
+//   var c = document.createElement('div');
+//   // set line width
+//   d.setAttribute('style','width: ' + width + 'px');
+//   // set line class
+//   d.className = 'horizontal-line animated orange ';
+//   // set circle class
+//   c.className = 'circle';
+//   // append circle to line
+//   d.appendChild(c);
+//   // append line to container
+//   lines.appendChild(d);
+// }
 
 /*******************
      line.BUILD
@@ -246,25 +218,25 @@ function buildOrderedVinjett1Lines(amount){
 /**********/
 /* line.2 */
 /**********/
-function buildVerticalVinjett2Lines(length, increment){
-  var lineIncrement = increment;
-  var lineLength = length;
-  var len = 7,
-      i = 0;
-  for (i; i < len; i++){
-    createVerticalVinjett2Line(lineLength);
-    lineLength = lineLength + lineIncrement;
-  }
-}
-// todo
-function buildHorizontalVinjett2Lines(){
-  var len = 7,
-      i = 0;
-  for (i; i < len; i++){
-    createHorizontalVinjett2Line(getRandomWidth(33, 95));
-    // createHorizontalVinjett2Line(getRandomWidth(33, 95), orderedColors[i]);
-  }
-}
+// function buildVerticalVinjett2Lines(length, increment){
+//   var lineIncrement = increment;
+//   var lineLength = length;
+//   var len = 7,
+//       i = 0;
+//   for (i; i < len; i++){
+//     createVerticalVinjett2Line(lineLength);
+//     lineLength = lineLength + lineIncrement;
+//   }
+// }
+// // todo
+// function buildHorizontalVinjett2Lines(){
+//   var len = 7,
+//       i = 0;
+//   for (i; i < len; i++){
+//     createHorizontalVinjett2Line(getRandomWidth(33, 95));
+//     // createHorizontalVinjett2Line(getRandomWidth(33, 95), orderedColors[i]);
+//   }
+// }
 
 /**********************
      line.DISPLAY
@@ -283,16 +255,16 @@ function displayVinjett1(amount){
 /**********/
 /* line.2 */
 /**********/
-function displayVinjett2(){
-  var lineIncrement = 40;
-  var lineLength = 185;
-
-  vinjett = v2;
-  v2.style.display = 'block';
-  lines = v2.children[0];
-  buildVerticalVinjett2Lines(lineLength, lineIncrement);
-  // displayHorizontalVinjett2Lines();
-}
+// function displayVinjett2(){
+//   var lineIncrement = 40;
+//   var lineLength = 185;
+//
+//   vinjett = v2;
+//   v2.style.display = 'block';
+//   lines = v2.children[0];
+//   buildVerticalVinjett2Lines(lineLength, lineIncrement);
+//   // displayHorizontalVinjett2Lines();
+// }
 
 
 // App Functions
