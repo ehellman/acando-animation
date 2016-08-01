@@ -57,10 +57,12 @@
 @keyframes slideInRightTitle {
   from {
     transform: translate3d(100%, -50%, 0);
+    opacity: 0;
     visibility: visible;
   }
 
   to {
+    opacity: 1;
     transform: translate3d(0, -50%, 0);
   }
 }
@@ -83,6 +85,22 @@
 
 .slideInDown {
   animation-name: slideInDown;
+  animation-delay: .5s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
   animation-delay: .5s;
 }
 

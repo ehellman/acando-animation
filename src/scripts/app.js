@@ -275,7 +275,8 @@ function displayVinjett1(amount){
 (function() {
 
   displayVinjett1(10);
-  v2.style.display = 'block';
+  // v2.style.display = 'block';
+  v6.style.display = 'block';
   // displayVinjett2();
 
   //nav

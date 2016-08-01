@@ -80,3 +80,33 @@ p{
     }
   }
 }
+
+
+#vinjett6{
+  background: $purple;
+  min-height: 600px;
+  padding-left: 100px;
+  position: relative;
+  & .lines {
+    width: 50%;
+    min-height: 600px;
+  }
+  & .title{
+    height: 100%;
+    display: inline-block;
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 10%;
+    .title-wrap{
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}

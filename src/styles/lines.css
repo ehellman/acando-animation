@@ -91,3 +91,67 @@ $vinjett2LineIncrement: 40px;
     }
   }
 }
+
+#vinjett6{
+  .lines{
+    position: relative;
+    height: 100%;
+  }
+  .line{
+    $lineWidth: 25px;
+    width: $lineWidth;
+    background: $lightBlue;
+    position: absolute;
+    float: left;
+    // position: relative;
+    bottom: 0;
+    /*background: #fff;*/
+    border-radius: $lineWidth $lineWidth 0 0;
+    margin-right: $lineSpacing;
+
+    @for $i from 1 to 9 {
+      // do stuff
+      $startWidth: 145px;
+      &.line-$(i){
+        left: calc($lineSpacing * $(i) + $lineWidth * $(i));
+        // left: calc($lineSpacing + 40*calc($(i)-1));
+      }
+    }
+    & .circle{
+      background: $grayscale1;
+      position: absolute;
+      width: $lineWidth;
+      height: $lineWidth;
+      top: 0;
+      /*width: 400px;*/
+    }
+    &.line-1{
+      height: 280px;
+    }
+    &.line-2{
+      height: 375px;
+    }
+    &.line-3{
+      height: 250px;
+    }
+    &.line-4{
+      height: 185px;
+    }
+    &.line-5{
+      height: 480px;
+      background: $orange;
+    }
+    &.line-6{
+      height: 280px;
+    }
+    &.line-7{
+      height: 205px;
+    }
+    &.line-8{
+      height: 330px;
+    }
+    &.line-9{
+      height: 280px;
+    }
+  }
+}
