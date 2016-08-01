@@ -119,3 +119,20 @@
   animation-name: slideInRightVinjett2;
   animation-delay: 1.3s;
 }
+
+@keyframes slideInRightVinjett4 {
+  from {
+    opacity: 0;
+    transform: scaleX(-1) rotate(25deg) translate(-100%, 0);
+  }
+
+  to {
+    transform: scaleX(-1) rotate(25deg) translate(-30%, 0);
+    opacity: 1;
+  }
+}
+
+.slideInRightVinjett4 {
+  animation-name: slideInRightVinjett4;
+  animation-delay: .5s;
+}

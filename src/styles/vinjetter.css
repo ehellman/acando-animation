@@ -81,6 +81,19 @@ p{
   }
 }
 
+#vinjett4{
+  background: $coolGray;
+  min-height: 900px;
+  position: relative;
+  & .lines {
+    width: 70%;
+    /*min-height: 600px;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*float: right;*/
+  }
+}
 
 #vinjett6{
   background: $purple;
@@ -88,13 +101,13 @@ p{
   padding-left: 100px;
   position: relative;
   & .lines {
-    width: 50%;
+    width: 40%;
     min-height: 600px;
   }
   & .title{
     height: 100%;
     display: inline-block;
-    width: 50%;
+    width: 60%;
     float: right;
     vertical-align: middle;
     position: absolute;

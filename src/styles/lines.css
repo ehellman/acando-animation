@@ -61,6 +61,146 @@ $vinjett2LineIncrement: 40px;
   }
 }
 
+#vinjett4{
+  $lineWidth: 15px;
+  $lineSpacing: 15px;
+  .lines{
+    transform: scaleX(-1) rotate(25deg) translate(-30%, 0);
+    filter: fliph;
+  }
+  .line{
+    height: $lineWidth;
+    border-radius: 0 $lineWidth $lineWidth 0;
+    margin-bottom: $lineSpacing;
+    display: block;
+    // float: right;
+    &.line-1{
+      width: 80%;
+    }
+    &.line-2{
+      width: 84%;
+    }
+    &.line-3{
+      width: 67%;
+    }
+    &.line-4{
+      width: 77%;
+    }
+    &.line-5{
+      width: 82%;
+    }
+    &.line-6{
+      width: 92%;
+    }
+    &.line-7{
+      width: 67%;
+    }
+    &.line-8{
+      width: 81%;
+    }
+    &.line-9{
+      width: 87%;
+    }
+    &.line-10{
+      width: 74%;
+    }
+    &.line-11{
+      width: 78%;
+    }
+    &.line-12{
+      width: 88%;
+    }
+    &.line-13{
+      width: 68%;
+    }
+    &.line-14{
+      width: 44%;
+    }
+    &.line-15{
+      width: 67%;
+    }
+    &.line-16{
+      width: 77%;
+    }
+    &.line-17{
+      width: 84%;
+    }
+    &.line-18{
+      width: 69%;
+    }
+    &.line-19{
+      width: 95%;
+    }
+    &.line-20{
+      width: 63%;
+    }
+    &.line-21{
+      width: 78%;
+    }
+    &.line-22{
+      width: 73%;
+    }
+    &.line-23{
+      width: 83%;
+    }
+    &.line-24{
+      width: 88%;
+    }
+    &.line-25{
+      width: 67%;
+    }
+    &.line-26{
+      width: 75%;
+    }
+    &.line-27{
+      width: 69%;
+    }
+    &.line-28{
+      width: 78%;
+    }
+    &.line-29{
+      width: 84%;
+    }
+    &.line-30{
+      width: 89%;
+    }
+    &.line-31{
+      width: 92%;
+    }
+    &.line-32{
+      width: 78%;
+    }
+    &.line-33{
+      width: 71%;
+    }
+    &.line-34{
+      width: 61%;
+    }
+    &.line-35{
+      width: 79%;
+    }
+    &.line-36{
+      width: 84%;
+    }
+    &.line-37{
+      width: 76%;
+    }
+    &.line-38{
+      width: 86%;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .circle{
+    background: #fff;
+    width: $lineWidth;
+    height: $lineWidth;
+    border-radius: $lineWidth;
+    float: right;
+  }
+}
+
 #vinjett2{
   .line{
     width: $lineWidth;
@@ -126,9 +266,11 @@ $vinjett2LineIncrement: 40px;
       .circle{
         background: $grayscale1;
         position: absolute;
+        width: $lineWidth;
+        height: $lineWidth;
+        border-radius: $lineWidth;
         right: 0;
         bottom: 0;
-        /*width: 400px;*/
       }
     }
   }
@@ -164,6 +306,7 @@ $vinjett2LineIncrement: 40px;
       position: absolute;
       width: $lineWidth;
       height: $lineWidth;
+      border-radius: $lineWidth;
       top: 0;
       /*width: 400px;*/
     }
