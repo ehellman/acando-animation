@@ -29,6 +29,41 @@ $vinjett2LineIncrement: 40px;
         height: calc($vinjett2LineHeight + 40*calc($(i)-1));
       }
     }
+    &.line-1{
+      & .horizontal-line{
+        width: 580px;
+      }
+    }
+    &.line-2{
+      & .horizontal-line{
+        width: 600px;
+      }
+    }
+    &.line-3{
+      & .horizontal-line{
+        width: 430px;
+      }
+    }
+    &.line-4{
+      & .horizontal-line{
+        width: 500px;
+      }
+    }
+    &.line-5{
+      & .horizontal-line{
+        width: 390px;
+      }
+    }
+    &.line-6{
+      & .horizontal-line{
+        width: 220px;
+      }
+    }
+    &.line-7{
+      & .horizontal-line{
+        width: 400px;
+      }
+    }
     background: #fff;
     float: left;
     position: relative;
@@ -39,11 +74,10 @@ $vinjett2LineIncrement: 40px;
       margin-right: 0;
     }
     .horizontal-line{
-      /*background: #fff;*/
+      background: $orange;
       border-radius: $lineWidth;
       position: absolute;
       z-index: 2;
-      /*left: 0;*/
       height: $lineWidth;
       bottom: 0;
       width: 400px;
